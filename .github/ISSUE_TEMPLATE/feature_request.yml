@@ -1,0 +1,193 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement for the Anime Portfolio
+title: "[Feature]: "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a new feature! Your ideas help make this project better for everyone.
+        
+        🔍 **Before submitting:** Please search existing issues and discussions to avoid duplicates.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight Checklist
+      description: Please ensure you've completed these steps before submitting
+      options:
+        - label: I have searched existing issues and discussions and this is not a duplicate
+          required: true
+        - label: I have read the [Contributing Guidelines](../../CONTRIBUTING.md)
+          required: true
+        - label: I have checked the [demo site](https://fumiya-tsx.github.io/) to see current features
+          required: true
+
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: 🎯 Feature Type
+      description: What type of feature are you requesting?
+      options:
+        - New Theme
+        - UI/UX Enhancement
+        - Animation/Interaction
+        - Performance Improvement
+        - Accessibility Feature
+        - Developer Experience
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: ✨ Feature Description
+      description: A clear and concise description of the feature you'd like to see
+      placeholder: Describe the feature in detail...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-solution
+    attributes:
+      label: 🎯 Problem & Solution
+      description: What problem does this feature solve? How would it improve the user experience?
+      placeholder: |
+        **Problem:** What issue or limitation are you trying to address?
+        **Solution:** How would this feature solve the problem?
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-story
+    attributes:
+      label: 👤 User Story
+      description: Describe this feature from a user's perspective
+      placeholder: |
+        As a [type of user], I want [feature] so that [benefit/goal].
+        
+        Example: "As a developer showcasing my portfolio, I want a dark mode toggle so that viewers can choose their preferred viewing experience."
+    validations:
+      required: true
+
+  - type: textarea
+    id: anime-inspiration
+    attributes:
+      label: 🎌 Anime Inspiration (Optional)
+      description: Is this feature inspired by any anime? Share the inspiration!
+      placeholder: |
+        If this feature is inspired by an anime series, character, or aesthetic, please share:
+        - Which anime/character inspired this idea?
+        - How does the anime element relate to the feature?
+        - Any specific visual or interaction references?
+
+  - type: textarea
+    id: detailed-requirements
+    attributes:
+      label: 📋 Detailed Requirements
+      description: Break down the feature into specific requirements or acceptance criteria
+      placeholder: |
+        - [ ] Requirement 1
+        - [ ] Requirement 2
+        - [ ] Requirement 3
+        
+        Please be as specific as possible about what this feature should do.
+
+  - type: textarea
+    id: mockups-examples
+    attributes:
+      label: 🎨 Mockups / Examples
+      description: Visual examples, mockups, or references that illustrate your idea
+      placeholder: |
+        - Links to similar implementations
+        - Mockup images (drag and drop here)
+        - Screenshots from other sites
+        - Design inspirations
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 🔥 Priority Level
+      description: How important is this feature to you?
+      options:
+        - Low (nice to have)
+        - Medium (would improve experience)
+        - High (significantly impacts usability)
+        - Critical (essential for accessibility/functionality)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: ⚡ Estimated Complexity
+      description: How complex do you think this feature would be to implement?
+      options:
+        - Simple (small UI changes, minor tweaks)
+        - Medium (new components, moderate logic)
+        - Complex (major features, significant changes)
+        - Very Complex (architectural changes, extensive work)
+        - I'm not sure
+
+  - type: textarea
+    id: technical-considerations
+    attributes:
+      label: 🔧 Technical Considerations
+      description: Any technical aspects or constraints to consider?
+      placeholder: |
+        - Performance implications
+        - Browser compatibility requirements
+        - Third-party dependencies
+        - Mobile/responsive considerations
+        - Accessibility requirements
+
+  - type: checkboxes
+    id: target-audience
+    attributes:
+      label: 👥 Target Audience
+      description: Who would benefit from this feature? (Check all that apply)
+      options:
+        - label: Portfolio creators (developers setting up their portfolio)
+        - label: Portfolio viewers (people browsing portfolios)
+        - label: Anime enthusiasts
+        - label: Developers learning from the codebase
+        - label: Contributors to the project
+        - label: Accessibility users
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 Alternatives Considered
+      description: Have you considered any alternative solutions or workarounds?
+      placeholder: |
+        - Alternative approaches you've thought of
+        - Existing workarounds you're currently using
+        - Similar features in other projects
+
+  - type: checkboxes
+    id: contribution-intent
+    attributes:
+      label: 🤝 Contribution Intent
+      description: How would you like to contribute to this feature?
+      options:
+        - label: I would like to implement this feature myself
+        - label: I can help with design/mockups
+        - label: I can help with testing
+        - label: I can help with documentation
+        - label: I would prefer someone else implements it
+        - label: I'm happy to provide feedback during development
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 📝 Additional Context
+      description: Any other information that would be helpful
+      placeholder: |
+        - Related issues or discussions
+        - Timeline considerations
+        - Budget constraints (for complex features)
+        - Community feedback you've received

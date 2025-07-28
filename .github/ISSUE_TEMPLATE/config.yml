@@ -1,0 +1,25 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Community Discussions
+    url: https://github.com/anime-portfolio/app/discussions
+    about: Ask questions, share ideas, and connect with the community
+  
+  - name: 🎨 Show & Tell
+    url: https://github.com/anime-portfolio/app/discussions/categories/show-and-tell
+    about: Share your customized anime portfolio or creative implementations
+  
+  - name: 💡 Ideas & Suggestions
+    url: https://github.com/anime-portfolio/app/discussions/categories/ideas
+    about: Share ideas for new features, themes, or improvements
+  
+  - name: ❓ Questions & Help
+    url: https://github.com/anime-portfolio/app/discussions/categories/q-a
+    about: Get help with implementation, customization, or technical questions
+  
+  - name: 📖 Documentation
+    url: https://github.com/anime-portfolio/app#readme
+    about: Read the project documentation and setup guide
+  
+  - name: 🚀 Live Demo
+    url: https://fumiya-tsx.github.io/
+    about: View the live demo to see features and functionality
