@@ -267,3 +267,24 @@ Created something amazing with this template? We'd love to feature it!
 [⭐ Star this repo](https://github.com/anime-portfolio/app) • [🚀 View Demo](https://fumiya-tsx.github.io/) • [📖 Documentation](#) • [💬 Community](https://github.com/anime-portfolio/app/discussions)
 
 </div>
+
+<!-- BEGIN gh-mutual-linking -->
+
+---
+
+### Related projects
+
+- [**bio**](https://github.com/didvc/bio) — Profile writings and translations of Vulpes (didvc)
+- [**astro-html-editor**](https://github.com/didvc/astro-html-editor) — Self-hosted HTML editor with live preview. Astro SSR + plain JavaScript, server-side file persistence.
+- [**awesome-template**](https://github.com/didvc/awesome-template)
+- [**react-image-editor**](https://github.com/didvc/react-image-editor) — A powerful web-based image editor built with React, TypeScript, and Canvas API. Features real-time filters, transformations, crop tool, and…
+- [**image-gallery-app**](https://github.com/didvc/image-gallery-app) — 🖼️ Modern minimalist image gallery built with Express.js and Vue.js - featuring drag & drop upload, responsive design, and clean aesthetics
+- [**vibe-go-image-gallery**](https://github.com/didvc/vibe-go-image-gallery) — 🖼️ Modern image gallery application built with Go and Vue.js featuring SEO optimization, responsive design, and automatic thumbnail generation.
+- [**html-bio-generator**](https://github.com/didvc/html-bio-generator) — A modern, intuitive tool for creating beautiful HTML bio pages with ease. Built with Next.js, TypeScript, and Tailwind CSS. Perfect for…
+- [**app**](https://github.com/AI-marriage/app) — AIを使った結婚証明書ジェネレーター - ChatGPTとの特別な瞬間を美しい証明書で記録しましょう
+- [**text-to-speech**](https://github.com/didvc/text-to-speech) — 🎤 VoiceFlow - Modern text-to-speech web application with real-time word highlighting, customizable voice settings, and content management. Built…
+- [**molecular**](https://github.com/didvc/molecular) — 🧬 Interactive web application for visualizing and animating molecular structures. Built with React, TypeScript, and modern web technologies for…
+- [**hugo-kawaii**](https://github.com/didvc/hugo-kawaii) — A modern and cool Hugo theme with beautiful kawaii aesthetics, dark mode support, and delightful animations
+- [**app**](https://github.com/hiroyuki-generator/app)
+- [**Kuso-Physics**](https://github.com/KusoGames/Kuso-Physics) — Open-source chaos physics game. Built with Next.js. Easily self-host on GitHub Pages.
+<!-- END gh-mutual-linking -->
