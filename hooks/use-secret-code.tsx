@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 
-const KONAMI_CODE = [
+const SECRET_CODE = [
   "ArrowUp",
   "ArrowUp",
   "ArrowDown",
@@ -15,8 +15,8 @@ const KONAMI_CODE = [
   "a",
 ]
 
-export function useKonamiCode() {
-  const [konamiActivated, setKonamiActivated] = useState(false)
+export function useSecretCode() {
+  const [secretCodeActivated, setSecretCodeActivated] = useState(false)
   const [keySequence, setKeySequence] = useState<string[]>([])
 
   useEffect(() => {
@@ -24,29 +24,29 @@ export function useKonamiCode() {
       // Add the key to the sequence
       const newSequence = [...keySequence, e.key]
 
-      // Only keep the last N keys where N is the length of the Konami code
-      if (newSequence.length > KONAMI_CODE.length) {
+      // Only keep the last N keys where N is the length of the secret code
+      if (newSequence.length > SECRET_CODE.length) {
         newSequence.shift()
       }
 
       setKeySequence(newSequence)
 
-      // Check if the sequence matches the Konami code
-      const isKonamiCode = newSequence.join(",") === KONAMI_CODE.join(",")
+      // Check if the sequence matches the secret code
+      const isSecretCode = newSequence.join(",") === SECRET_CODE.join(",")
 
-      if (isKonamiCode && !konamiActivated) {
-        setKonamiActivated(true)
+      if (isSecretCode && !secretCodeActivated) {
+        setSecretCodeActivated(true)
 
         // Reset after some time
         setTimeout(() => {
-          setKonamiActivated(false)
+          setSecretCodeActivated(false)
         }, 10000)
       }
     }
 
     window.addEventListener("keydown", handleKeyDown)
     return () => window.removeEventListener("keydown", handleKeyDown)
-  }, [keySequence, konamiActivated])
+  }, [keySequence, secretCodeActivated])
 
-  return konamiActivated
+  return secretCodeActivated
 }

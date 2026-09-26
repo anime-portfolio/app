@@ -1,3 +1,5 @@
+English · [日本語](README-ja.md) · [繁體中文](README-zh-TW.md) · [简体中文](README-zh.md) · [Deutsch](README-de.md) · [Français](README-fr.md) · [Español](README-es.md) · [Bahasa Indonesia](README-id.md)
+
 # Anime Portfolio
 
 A developer portfolio template with two original watercolor characters, each with a theme of her own: Crystalline, a light theme, and Weltschmerz, a dark one.
@@ -19,7 +21,7 @@ Both characters and their illustrations are original work by Aesthetic Vulpes (d
 
 ## Features
 
-The current theme's character floats in the corner of the page and says a short line now and then, or when clicked. Pages change with a glitch transition and load behind an ASCII animation, cards shift slightly with the mouse, and a terminal-style interface can browse the projects by command. There are a few easter eggs, including the Konami code. The interface is available in English and Japanese, and a small wiki holds the help and privacy pages.
+The current theme's character floats in the corner of the page and says a short line now and then, or when clicked. Pages change with a glitch transition and load behind an ASCII animation, cards shift slightly with the mouse, and a terminal-style interface can browse the projects by command. There are a few easter eggs, including a hidden key sequence (↑ ↑ ↓ ↓ ← → ← → B A). The interface is available in English and Japanese, and a small wiki holds the help and privacy pages.
 
 ## Who it is for
 
@@ -57,7 +59,7 @@ Each character has a short list of lines that she says at random, or when a visi
 - Keep them short. One sentence reads well in the speech bubble; two is the limit.
 - Match the theme. Crystalline-chan notices light and color; Weltschmerz-chan notices weight and silence.
 - Let them point somewhere. A line like "Let me show you something that sparkles..." invites a visitor to scroll.
-- Write a line for the Konami code. Visitors who find it get a special message, so make it worth finding.
+- Write a line for the hidden key sequence. Visitors who find it get a special message, so make it worth finding.
 
 ### Two themes, two moods
 
@@ -252,17 +254,9 @@ The code is released under the [MIT License](LICENSE). The character illustratio
 
 ### Related projects
 
-- [bio](https://github.com/didvc/bio): Profile writings and translations of Vulpes (didvc)
-- [astro-html-editor](https://github.com/didvc/astro-html-editor): Self-hosted HTML editor with live preview. Astro SSR + plain JavaScript, server-side file persistence.
-- [awesome-template](https://github.com/didvc/awesome-template)
-- [react-image-editor](https://github.com/didvc/react-image-editor): A powerful web-based image editor built with React, TypeScript, and Canvas API. Features real-time filters, transformations, crop tool, and…
-- [image-gallery-app](https://github.com/didvc/image-gallery-app): Modern minimalist image gallery built with Express.js and Vue.js - featuring drag & drop upload, responsive design, and clean aesthetics
-- [vibe-go-image-gallery](https://github.com/didvc/vibe-go-image-gallery): Modern image gallery application built with Go and Vue.js featuring SEO optimization, responsive design, and automatic thumbnail generation.
-- [html-bio-generator](https://github.com/didvc/html-bio-generator): A modern, intuitive tool for creating beautiful HTML bio pages with ease. Built with Next.js, TypeScript, and Tailwind CSS. Perfect for…
-- [app](https://github.com/AI-marriage/app): AIを使った結婚証明書ジェネレーター - ChatGPTとの特別な瞬間を美しい証明書で記録しましょう
-- [text-to-speech](https://github.com/didvc/text-to-speech): VoiceFlow - Modern text-to-speech web application with real-time word highlighting, customizable voice settings, and content management. Built…
-- [molecular](https://github.com/didvc/molecular): Interactive web application for visualizing and animating molecular structures. Built with React, TypeScript, and modern web technologies for…
 - [hugo-kawaii](https://github.com/didvc/hugo-kawaii): A modern and cool Hugo theme with beautiful kawaii aesthetics, dark mode support, and delightful animations
-- [app](https://github.com/hiroyuki-generator/app)
-- [Kuso-Physics](https://github.com/KusoGames/Kuso-Physics): Open-source chaos physics game. Built with Next.js. Easily self-host on GitHub Pages.
+- [Kuso-Physics](https://github.com/KusoGames/Kuso-Physics): The chaos physics game, big brain puzzles included. Built with Next.js and hosted on GitHub Pages.
+- [astro-html-editor](https://github.com/didvc/astro-html-editor): Self-hosted HTML editor with live preview. Astro SSR + plain JavaScript, server-side file persistence.
+- [text-to-speech](https://github.com/didvc/text-to-speech): VoiceFlow - Modern text-to-speech web application with real-time word highlighting, customizable voice settings, and content management. Built with React, TypeScript, and Web Speech API.
+- [didvc](https://github.com/didvc/didvc): Aesthetic Vulpes, Tokyo | a 20s Japanese fox #arts #music #provenance | 2027 Profile README
 <!-- END gh-mutual-linking -->

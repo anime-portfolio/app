@@ -7,7 +7,7 @@ import FloatingGirl from "@/components/floating-girl"
 import TerminalUI from "@/components/terminal-ui"
 import { GlitchText } from "@/components/glitch-text"
 import { useParallax } from "@/hooks/use-parallax"
-import { useKonamiCode } from "@/hooks/use-konami-code"
+import { useSecretCode } from "@/hooks/use-secret-code"
 import { cn } from "@/lib/utils"
 import AsciiLoader from "@/components/ascii-loader"
 import GlitchTransition from "@/components/glitch-transition"
@@ -25,7 +25,7 @@ function PortfolioContent() {
   const [terminalOpen, setTerminalOpen] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const { ref } = useParallax()
-  const konamiActivated = useKonamiCode()
+  const secretCodeActivated = useSecretCode()
   const { currentTheme } = useTheme()
   const { t } = useLanguage()
   const [loadingPhase, setLoadingPhase] = useState<"ascii" | "glitch" | "complete">("ascii")
@@ -345,7 +345,7 @@ function PortfolioContent() {
 
       {/* Floating anime girl */}
       {currentTheme.features.includes("floating-girl") && currentTheme.floatingGirl && (
-        <FloatingGirl girl={currentTheme.floatingGirl} konamiActivated={konamiActivated} />
+        <FloatingGirl girl={currentTheme.floatingGirl} secretCodeActivated={secretCodeActivated} />
       )}
 
       {/* Terminal UI */}

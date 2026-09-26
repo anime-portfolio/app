@@ -24,7 +24,7 @@ export interface FloatingAnimeGirl {
   floatingStyle?: "hover" | "orbit" | "glitchy" | "fade-in-out"
   mood?: "cheerful" | "tsundere" | "mysterious" | "deadpan"
   phrases?: string[] // 話すセリフ一覧
-  interactionTriggers?: ("hover" | "click" | "scroll" | "konami-code")[]
+  interactionTriggers?: ("hover" | "click" | "scroll" | "secret-code")[]
   themeAffinity?: string[] // 例: ['hacker', 'pink']
 }
 
@@ -81,7 +81,7 @@ export interface PortfolioPageProperties {
     | "easter-eggs"
     | "voice-reactive"
     | "3d-mouse-parallax"
-    | "konami-code"
+    | "secret-code"
     | "live2d"
   )[]
   floatingGirl?: FloatingAnimeGirl

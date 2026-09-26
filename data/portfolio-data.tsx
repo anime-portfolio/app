@@ -43,7 +43,7 @@ export const profileData: ProfileData = {
 export const weltschmerzTheme: PortfolioPageProperties = {
   type: "fullscreen",
   styles: ["anime", "dark", "hacker", "neon"],
-  features: ["floating-girl", "glitch-transition", "ascii-loader", "easter-eggs", "3d-mouse-parallax", "konami-code"],
+  features: ["floating-girl", "glitch-transition", "ascii-loader", "easter-eggs", "3d-mouse-parallax", "secret-code"],
   floatingGirl: {
     id: "weltschmerz",
     name: "Weltschmerz-chan",
@@ -57,7 +57,7 @@ export const weltschmerzTheme: PortfolioPageProperties = {
       "Stay a little longer, if you like.",
       "Let me show you something quiet...",
     ],
-    interactionTriggers: ["hover", "click", "konami-code"],
+    interactionTriggers: ["hover", "click", "secret-code"],
     themeAffinity: ["hacker", "dark"],
   },
   enableTerminalCommands: true,
@@ -81,7 +81,7 @@ export const weltschmerzTheme: PortfolioPageProperties = {
 export const crystallineTheme: PortfolioPageProperties = {
   type: "fullscreen",
   styles: ["anime", "moe", "pink", "minimal"],
-  features: ["floating-girl", "glitch-transition", "ascii-loader", "easter-eggs", "3d-mouse-parallax", "konami-code"],
+  features: ["floating-girl", "glitch-transition", "ascii-loader", "easter-eggs", "3d-mouse-parallax", "secret-code"],
   floatingGirl: {
     id: "crystalline",
     name: "Crystalline-chan",
@@ -95,7 +95,7 @@ export const crystallineTheme: PortfolioPageProperties = {
       "Colors bleed, and that's the best part.",
       "Let me show you something that sparkles...",
     ],
-    interactionTriggers: ["hover", "click", "konami-code"],
+    interactionTriggers: ["hover", "click", "secret-code"],
     themeAffinity: ["moe", "pink"],
   },
   enableTerminalCommands: true,

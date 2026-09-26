@@ -8,10 +8,10 @@ import { cn } from "@/lib/utils"
 
 interface FloatingGirlProps {
   girl: FloatingAnimeGirl
-  konamiActivated?: boolean
+  secretCodeActivated?: boolean
 }
 
-export default function FloatingGirl({ girl, konamiActivated = false }: FloatingGirlProps) {
+export default function FloatingGirl({ girl, secretCodeActivated = false }: FloatingGirlProps) {
   const [isVisible, setIsVisible] = useState(true)
   const [isTalking, setIsTalking] = useState(false)
   const [currentPhrase, setCurrentPhrase] = useState("")
@@ -50,16 +50,16 @@ export default function FloatingGirl({ girl, konamiActivated = false }: Floating
     return () => clearInterval(interval)
   }, [girl.phrases, isTalking])
 
-  // Handle Konami code activation
+  // Handle secret code activation
   useEffect(() => {
-    if (konamiActivated && girl.interactionTriggers?.includes("konami-code")) {
+    if (secretCodeActivated && girl.interactionTriggers?.includes("secret-code")) {
       setCurrentPhrase("You found the secret code! Here's a special message just for you.")
       setIsTalking(true)
       setTimeout(() => {
         setIsTalking(false)
       }, 5000)
     }
-  }, [konamiActivated, girl.interactionTriggers])
+  }, [secretCodeActivated, girl.interactionTriggers])
 
   // Handle floating animation based on style
   const getAnimationVariants = () => {
