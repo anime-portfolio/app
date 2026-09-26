@@ -38,7 +38,7 @@ Get help with issues you're experiencing. Please check existing discussions and 
 
 ## 🚀 **Getting Started**
 
-1. **New to the project?** Check out our [README](../README.md) and [demo](https://fumiya-tsx.github.io/)
+1. **New to the project?** Check out our [README](../README.md) and [demo](https://anime-portfolio.github.io/app/)
 2. **Want to contribute?** Read our [Contributing Guidelines](../CONTRIBUTING.md)
 3. **Found a bug?** Please use our [Issue Templates](./ISSUE_TEMPLATE/) instead
 4. **Need quick help?** Try the Q&A category first

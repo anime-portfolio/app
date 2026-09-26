@@ -9,15 +9,15 @@ export const ja = {
 
   // Profile
   profileTitle: "プロフィール",
-  name: "竹本 文也",
+  name: "Aesthetic Vulpes",
   role: "フルスタック開発者",
   location: "東京、日本",
-  bio: "アニメと最先端技術が大好きな情熱的な開発者です。React、TypeScript、Three.jsを使用したインタラクティブなWeb体験の作成を専門としています。",
+  bio: "東京の開発者。Web、来歴（プロベナンス）、暗号技術に取り組みつつ、イラストやアートを大切にしています。",
   experience: "経験",
-  experienceYears: "5年以上",
+  experienceYears: "2016年から",
   skills: "スキル",
   contact: "連絡先",
-  email: "hello@fumiya.dev",
+  email: "",
 
   // Skills
   frontend: "フロントエンド",
@@ -42,11 +42,11 @@ export const ja = {
   inspiredBy: "インスピレーション元",
 
   // Footer
-  copyright: "© 2025 .fumiya.tsx • Next.jsとTypeScriptで構築 • インスピレーション元：",
+  copyright: "© 2026 Aesthetic Vulpes (didvc) • Next.jsとTypeScriptで構築 • テーマ：",
 
   // Theme names
-  lain: "シリアルエクスペリメンツレイン",
-  luckystar: "らき☆すた",
+  weltschmerz: "ヴェルトシュメルツ",
+  crystalline: "クリスタリン",
 
   // Language
   switchToJapanese: "日本語",

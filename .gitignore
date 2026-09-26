@@ -128,3 +128,6 @@ temp/
 
 # Articles (draft/private content)
 articles/
+# Personal, untracked working files
+.personal/
+provenance/

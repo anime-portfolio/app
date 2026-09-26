@@ -11,7 +11,7 @@ export interface Work {
   date?: string // 例: '2025-05'
   featured?: boolean // トップ表示対象
   isWtfProject?: boolean // ネタ系 or 謎技術フラグ
-  animeInspiration?: string // アニメ的発想元（例: Lain, 初音ミク, プリパラ etc）
+  animeInspiration?: string // 発想元（任意）
 }
 
 // フローティングアニメ娘の定義
@@ -54,9 +54,9 @@ export interface ProfileData {
   email: string
   image: string
   social: {
-    github: string
-    twitter: string
-    linkedin: string
+    github?: string
+    twitter?: string
+    linkedin?: string
   }
   skills: {
     frontend: string[]

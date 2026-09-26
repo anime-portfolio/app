@@ -4,8 +4,8 @@ import type { Work, WorkCategory, PortfolioPageProperties, ProfileData } from "@
 export const profileData: ProfileData = {
   position: "bottom", // "top" or "bottom"
   name: {
-    en: "Fumiya Takemoto",
-    ja: "竹本 文也",
+    en: "Aesthetic Vulpes",
+    ja: "Aesthetic Vulpes",
   },
   role: {
     en: "Full Stack Developer",
@@ -16,19 +16,17 @@ export const profileData: ProfileData = {
     ja: "東京、日本",
   },
   bio: {
-    en: "I'm a passionate developer with a love for anime and cutting-edge technology. I specialize in creating interactive web experiences using React, TypeScript, and Three.js.",
-    ja: "アニメと最先端技術が大好きな情熱的な開発者です。React、TypeScript、Three.jsを使用したインタラクティブなWeb体験の作成を専門としています。",
+    en: "A developer in Tokyo working on the web, provenance and cryptography, with a soft spot for illustration and the arts.",
+    ja: "東京の開発者。Web、来歴（プロベナンス）、暗号技術に取り組みつつ、イラストやアートを大切にしています。",
   },
   experience: {
-    en: "5+ years",
-    ja: "5年以上",
+    en: "Since 2016",
+    ja: "2016年から",
   },
-  email: "hello@fumiya.dev",
-  image: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1000&auto=format&fit=crop",
+  email: "",
+  image: "https://github.com/didvc.png",
   social: {
-    github: "https://github.com/anime-portfolio/app",
-    twitter: "https://twitter.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourusername",
+    github: "https://github.com/didvc",
   },
   skills: {
     frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Three.js", "Framer Motion"],
@@ -41,23 +39,23 @@ export const profileData: ProfileData = {
   },
 }
 
-// Lain theme configuration
-export const lainTheme: PortfolioPageProperties = {
+// Weltschmerz theme configuration (dark)
+export const weltschmerzTheme: PortfolioPageProperties = {
   type: "fullscreen",
   styles: ["anime", "dark", "hacker", "neon"],
   features: ["floating-girl", "glitch-transition", "ascii-loader", "easter-eggs", "3d-mouse-parallax", "konami-code"],
   floatingGirl: {
-    id: "lain",
-    name: "Lain",
-    description: "Your digital companion who knows too much about the Wired",
-    image: "https://yuis.xsrv.jp/images/ss/lain_bgr_drawing.png",
+    id: "weltschmerz",
+    name: "Weltschmerz-chan",
+    description: "A quiet girl who feels the weight of the world",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/weltschmerz.png`,
     floatingStyle: "glitchy",
     mood: "mysterious",
     phrases: [
-      "Present day... Present time!",
-      "Everything is connected in the Wired.",
-      "Who are you really?",
-      "Let me show you something interesting...",
+      "Some days the world feels heavy.",
+      "Ink dries, but the stain stays.",
+      "Stay a little longer, if you like.",
+      "Let me show you something quiet...",
     ],
     interactionTriggers: ["hover", "click", "konami-code"],
     themeAffinity: ["hacker", "dark"],
@@ -75,27 +73,27 @@ export const lainTheme: PortfolioPageProperties = {
   secondaryColor: "text-gray-400",
   headerBg: "bg-black/70",
   footerBg: "bg-black/70",
-  siteTitle: ".fumiya.tsx | Cyberpunk Dev Portfolio",
-  siteDescription: "A cyberpunk-themed developer portfolio inspired by Serial Experiments Lain",
+  siteTitle: "Aesthetic Vulpes | Weltschmerz",
+  siteDescription: "A dark, quiet developer portfolio with the original character Weltschmerz-chan",
 }
 
-// Lucky Star theme configuration
-export const luckyStarTheme: PortfolioPageProperties = {
+// Crystalline theme configuration (light)
+export const crystallineTheme: PortfolioPageProperties = {
   type: "fullscreen",
   styles: ["anime", "moe", "pink", "minimal"],
   features: ["floating-girl", "glitch-transition", "ascii-loader", "easter-eggs", "3d-mouse-parallax", "konami-code"],
   floatingGirl: {
-    id: "konata",
-    name: "Konata",
-    description: "Your otaku companion who knows too much about anime and games",
-    image: "https://yuis.xsrv.jp/images/ss/konata_bgr_drawing.png",
+    id: "crystalline",
+    name: "Crystalline-chan",
+    description: "A watercolor girl who walks with a deer made of glass",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/crystalline.png`,
     floatingStyle: "hover",
     mood: "cheerful",
     phrases: [
-      "I'm not lazy, I'm just conserving energy!",
-      "Games and anime are my life!",
-      "Did you know I'm an expert at RPGs?",
-      "Let me show you my collection...",
+      "Everything looks clearer through glass.",
+      "Did you see the deer? It's made of light.",
+      "Colors bleed, and that's the best part.",
+      "Let me show you something that sparkles...",
     ],
     interactionTriggers: ["hover", "click", "konami-code"],
     themeAffinity: ["moe", "pink"],
@@ -113,15 +111,15 @@ export const luckyStarTheme: PortfolioPageProperties = {
   secondaryColor: "text-blue-400",
   headerBg: "bg-white/70",
   footerBg: "bg-white/70",
-  siteTitle: ".fumiya.tsx | Kawaii Dev Portfolio",
-  siteDescription: "A cute and colorful developer portfolio inspired by Lucky Star",
+  siteTitle: "Aesthetic Vulpes | Crystalline",
+  siteDescription: "A light watercolor developer portfolio with the original character Crystalline-chan",
 }
 
 // Portfolio works data
 export const works: Work[] = [
   {
-    id: "neural-vocaloid",
-    title: "Neural Vocaloid",
+    id: "neural-singer",
+    title: "Neural Singer",
     description:
       "An AI-powered voice synthesizer that can mimic any singing voice with just a few samples. Built with PyTorch and React.",
     descriptionShort: "AI voice synthesis for the masses",
@@ -129,28 +127,26 @@ export const works: Work[] = [
       "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1558507652-2d9626c4e67a?q=80&w=2070&auto=format&fit=crop",
     ],
-    link: "https://neural-vocaloid.example.com",
+    link: "https://neural-singer.example.com",
     repo: "https://github.com/anime-portfolio/app",
     tags: ["AI", "PyTorch", "React", "Web Audio API", "TensorFlow.js"],
     date: "2025-04",
     featured: true,
-    animeInspiration: "Hatsune Miku",
   },
   {
-    id: "wired-protocol",
-    title: "Wired Protocol",
-    description: "A decentralized social network inspired by anime. Features unique avatars and a custom UI.",
-    descriptionShort: "Connect with fellow otaku",
+    id: "quiet-protocol",
+    title: "Quiet Protocol",
+    description: "A decentralized social network with unique avatars and a custom UI.",
+    descriptionShort: "Connect with like-minded people",
     images: [
       "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?q=80&w=2070&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070&auto=format&fit=crop",
     ],
-    link: "https://wired-protocol.example.com",
+    link: "https://quiet-protocol.example.com",
     repo: "https://github.com/anime-portfolio/app",
     tags: ["React", "Node.js", "WebRTC", "Encryption", "P2P"],
     date: "2025-02",
     featured: true,
-    animeInspiration: "Serial Experiments Lain",
   },
   {
     id: "hologram-live",
@@ -166,7 +162,6 @@ export const works: Work[] = [
     tags: ["Three.js", "WebGL", "React", "Web Audio API"],
     date: "2024-12",
     featured: true,
-    animeInspiration: "Love Live!",
   },
   {
     id: "quantum-cat",
@@ -226,15 +221,14 @@ export const categories: WorkCategory[] = [
 
 // Site configuration
 export const siteConfig = {
-  name: ".fumiya.tsx",
-  url: "https://animedevportfolio.vercel.app",
-  ogImage: "https://animedevportfolio.vercel.app/og.png",
-  description: "A developer portfolio with anime aesthetics and interactive features",
+  name: "Aesthetic Vulpes",
+  url: "https://anime-portfolio.github.io/app/",
+  ogImage: "https://anime-portfolio.github.io/app/og.png",
+  description: "A developer portfolio with two original watercolor characters, Crystalline-chan and Weltschmerz-chan",
   links: {
     github: "https://github.com/anime-portfolio/app",
-    twitter: "https://twitter.com/animedevportfolio",
   },
-  creator: "Anime Dev",
+  creator: "Aesthetic Vulpes",
   keywords: [
     "developer portfolio",
     "anime",

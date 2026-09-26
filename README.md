@@ -1,102 +1,69 @@
-# 🎌 Anime Portfolio
+# Anime Portfolio
 
-> **A stunning developer portfolio template with anime aesthetics and interactive features**
+A developer portfolio template with two original watercolor characters, each with a theme of her own: Crystalline, a light theme, and Weltschmerz, a dark one.
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live-brightgreen?style=for-the-badge&logo=vercel)](https://fumiya-tsx.github.io/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/anime-portfolio/app?style=for-the-badge&logo=github)](https://github.com/anime-portfolio/app/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/anime-portfolio/app?style=for-the-badge&logo=github)](https://github.com/anime-portfolio/app/network)
+[![Live demo](https://img.shields.io/badge/demo-live-brightgreen)](https://anime-portfolio.github.io/app/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-**Transform your developer portfolio into an interactive anime-inspired experience that stands out from the crowd!**
+![Crystalline theme](./screenshot.png)
 
-## 📸 Screenshots
+![Weltschmerz theme](./screenshot_dark.png)
 
-<div align="center">
+## Themes and characters
 
-### 🌸 Lucky Star Theme (Light Mode)
-![Lucky Star Theme](./screenshot.png)
+Crystalline is the light theme, in soft watercolor blues and lilacs. Its companion is Crystalline-chan, a girl who walks with a deer made of glass.
 
-### 🌙 Lain Theme (Dark Mode)  
-![Lain Theme](./screenshot_dark.png)
+Weltschmerz is the dark theme, quiet and heavy, in deep purples and ink. Its companion is Weltschmerz-chan, a girl who feels the weight of the world.
 
-*Featuring dual anime themes with smooth transitions, interactive elements, and beautiful responsive design*
+Both characters and their illustrations are original work by Aesthetic Vulpes (didvc). The switch in the header moves between the two themes.
 
-</div>
+## Features
 
-## ✨ Features
+The current theme's character floats in the corner of the page and says a short line now and then, or when clicked. Pages change with a glitch transition and load behind an ASCII animation, cards shift slightly with the mouse, and a terminal-style interface can browse the projects by command. There are a few easter eggs, including the Konami code. The interface is available in English and Japanese, and a small wiki holds the help and privacy pages.
 
-### 🎨 **Dual Anime Themes**
-- **🌙 Lain Theme**: Cyberpunk aesthetics inspired by *Serial Experiments Lain*
-- **🌸 Lucky Star Theme**: Kawaii aesthetic inspired by *Lucky Star*
-- Seamless theme switching with smooth transitions
+## Tech stack
 
-### 🎭 **Interactive Elements**
-- **Floating Anime Characters**: Interactive mascots with personality
-- **Glitch Transitions**: Smooth, anime-inspired page transitions
-- **ASCII Loading Animations**: Retro terminal-style loaders
-- **Easter Eggs**: Hidden surprises for visitors to discover
-- **Konami Code Support**: Classic gaming nostalgia
-- **3D Mouse Parallax**: Immersive depth effects
+Next.js 15 (App Router, exported as a static site), React 19, TypeScript, Tailwind CSS 3, Framer Motion, and Radix UI components in the shadcn/ui style, with Lucide icons. The demo is hosted on GitHub Pages.
 
-### 🛠️ **Developer Features**
-- **Terminal UI**: Interactive command interface
-- **Customizable Projects**: Easy portfolio project management
-- **Responsive Design**: Perfect on all devices
-- **TypeScript**: Full type safety
-- **Performance Optimized**: Fast loading and smooth animations
-- **SEO Friendly**: Optimized for search engines
+## Quick start
 
-### 🎯 **Modern Tech Stack**
-- ⚡ **Next.js 14** - React framework with App Router
-- 🎨 **Tailwind CSS** - Utility-first styling
-- 🌟 **Framer Motion** - Smooth animations
-- 📱 **Responsive Design** - Mobile-first approach
-- 🔒 **TypeScript** - Type safety and better DX
-- 🎪 **Three.js** - 3D graphics and interactions
+Requires Node.js 18.18 or later, and npm or pnpm.
 
-## 🚀 Quick Start
-
-### Prerequisites
-- **Node.js** 18.0 or later
-- **npm** or **pnpm** package manager
-
-### Installation
-
-1. **Clone the repository**
+1. Clone the repository:
    ```bash
    git clone https://github.com/anime-portfolio/app.git
    cd app
    ```
 
-2. **Install dependencies**
+2. Install the dependencies:
    ```bash
    npm install
    # or
    pnpm install
    ```
 
-3. **Start development server**
+3. Start the development server:
    ```bash
    npm run dev
    # or
    pnpm dev
    ```
 
-4. **Open in browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+4. Open [http://localhost:3000](http://localhost:3000).
 
-### Build for Production
+### Build
 
 ```bash
 npm run build
-npm start
 ```
 
-## 🎨 Customization
+The site is exported as static files to `out/`. To serve it from a subpath, such as `/app/` on GitHub Pages, set `PAGES_BASE_PATH=/app` for the build.
 
-### Basic Configuration
+## Customization
 
-Edit `data/portfolio-data.tsx` to customize:
+### Profile
+
+Edit `data/portfolio-data.tsx`:
 
 ```typescript
 export const profileData: ProfileData = {
@@ -112,9 +79,11 @@ export const profileData: ProfileData = {
 }
 ```
 
-### Adding Projects
+Social links and the contact email are optional; the page only shows the ones that are set.
 
-Add your projects to the `works` array:
+### Projects
+
+Add your projects to the `works` array in the same file:
 
 ```typescript
 {
@@ -127,13 +96,12 @@ Add your projects to the `works` array:
   tags: ["React", "TypeScript", "Next.js"],
   date: "2024-12",
   featured: true,
-  animeInspiration: "Your Favorite Anime",
 }
 ```
 
-### Theme Customization
+### Themes
 
-Create custom themes by extending the theme configurations:
+The two themes live in `contexts/theme-context.tsx`. A new theme is another configuration of the same shape, with its own colors and floating character:
 
 ```typescript
 export const customTheme: PortfolioPageProperties = {
@@ -144,129 +112,45 @@ export const customTheme: PortfolioPageProperties = {
 }
 ```
 
-## 📁 Project Structure
+## Project structure
 
 ```
-anime-portfolio/
+app/
 ├── app/                    # Next.js App Router
 ├── components/             # React components
 │   ├── ui/                # Reusable UI components
 │   ├── work-card.tsx      # Project card component
-│   ├── floating-girl.tsx  # Anime character component
+│   ├── floating-girl.tsx  # Floating character component
 │   └── terminal-ui.tsx    # Terminal interface
-├── contexts/              # React contexts
+├── contexts/              # React contexts, including the themes
 ├── data/                  # Portfolio data and configuration
 ├── hooks/                 # Custom React hooks
-├── lib/                   # Utilities and helpers
-├── public/                # Static assets
+├── lib/                   # Utilities, translations and wiki articles
+├── public/                # Static assets, including the character images
 ├── styles/                # Global styles
 └── types/                 # TypeScript type definitions
 ```
 
-## 🎭 Themes
+## Deployment
 
-### 🌙 Lain Theme (Cyberpunk)
-- **Inspiration**: Serial Experiments Lain
-- **Aesthetic**: Dark cyberpunk with neon accents
-- **Colors**: Deep grays, electric pinks, terminal greens
-- **Character**: Lain Iwakura with glitchy interactions
+The demo deploys to GitHub Pages through `.github/workflows/pages.yml`, which builds and publishes the site on every push to `master`. The exported `out/` folder also works on Vercel, Netlify or any other static host.
 
-### 🌸 Lucky Star Theme (Kawaii)
-- **Inspiration**: Lucky Star
-- **Aesthetic**: Bright and cheerful moe style
-- **Colors**: Soft pastels, blues, and pinks
-- **Character**: Konata Izumi with playful interactions
+## Contributing
 
-## 🚀 Deployment
+Contributions are welcome. Fork the repository, then:
 
-### Vercel (Recommended)
-1. Push your code to GitHub
-2. Connect your repository to Vercel
-3. Deploy automatically
+1. Create a feature branch: `git checkout -b feature/your-feature`
+2. Commit your changes: `git commit -m "Add your feature"`
+3. Push the branch: `git push origin feature/your-feature`
+4. Open a pull request
 
-### GitHub Pages
-1. Update `next.config.mjs` for static export
-2. Build and export: `npm run build`
-3. Deploy the `out` folder
+Follow the existing code style, add tests for new features where it makes sense, update the documentation, and check your change in more than one browser and in both themes. See [CONTRIBUTING.md](./CONTRIBUTING.md) for the details.
 
-### Other Platforms
-Compatible with Netlify, Railway, and other static hosting services.
+Questions and ideas go to [Discussions](https://github.com/anime-portfolio/app/discussions), and bugs to [Issues](https://github.com/anime-portfolio/app/issues).
 
-## 🤝 Contributing
+## License
 
-We welcome contributions from the anime and developer community!
-
-### How to Contribute
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-### Development Guidelines
-- Follow the existing code style
-- Add tests for new features
-- Update documentation as needed
-- Test on multiple browsers and devices
-- Ensure anime theme compatibility
-
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
-
-## 🎌 Anime Inspirations
-
-This project celebrates the intersection of anime culture and web development:
-
-- **Serial Experiments Lain** - Cyberpunk aesthetics and digital identity themes
-- **Lucky Star** - Otaku culture and cheerful slice-of-life vibes
-- **Ghost in the Shell** - Futuristic UI design inspiration
-- **Akira** - Neon-soaked visual styling
-- **Your Favorite Anime** - We'd love to see what inspires your customizations!
-
-## 🌟 Showcase
-
-Created something amazing with this template? We'd love to feature it!
-
-- Share in [Discussions](https://github.com/anime-portfolio/app/discussions)
-- Use hashtag `#AnimePortfolio` on social media
-- Submit a PR to add your portfolio to our showcase
-
-## 💬 Community
-
-- **[Discussions](https://github.com/anime-portfolio/app/discussions)** - Ask questions, share ideas
-- **[Issues](https://github.com/anime-portfolio/app/issues)** - Report bugs, request features
-- **[Discord](#)** - Coming soon! Real-time community chat
-
-## 🙏 Acknowledgments
-
-- Inspired by the creativity of the anime community
-- Built with amazing open-source tools
-- Special thanks to all contributors and anime enthusiasts
-
-## 📊 Stats
-
-![GitHub language count](https://img.shields.io/github/languages/count/anime-portfolio/app)
-![GitHub top language](https://img.shields.io/github/languages/top/anime-portfolio/app)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/anime-portfolio/app)
-
----
-
-<div align="center">
-
-**Made with ❤️ by anime enthusiasts, for anime enthusiasts**
-
-*Transform your portfolio into a work of art that reflects your passion for both code and anime!*
-
-[![Built with Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=flat-square&logo=next.js)](https://nextjs.org/)
-[![Styled with Tailwind](https://img.shields.io/badge/Styled%20with-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
-[![Animated with Framer Motion](https://img.shields.io/badge/Animated%20with-Framer%20Motion-0055FF?style=flat-square&logo=framer)](https://www.framer.com/motion/)
-
-[⭐ Star this repo](https://github.com/anime-portfolio/app) • [🚀 View Demo](https://fumiya-tsx.github.io/) • [📖 Documentation](#) • [💬 Community](https://github.com/anime-portfolio/app/discussions)
-
-</div>
+The code is released under the [MIT License](LICENSE). The character illustrations (Crystalline-chan and Weltschmerz-chan, in `public/images/`, `public/og.png` and the screenshots) are licensed under [CC BY 4.0](LICENSE-CC-BY-4.0).
 
 <!-- BEGIN gh-mutual-linking -->
 
@@ -274,17 +158,17 @@ Created something amazing with this template? We'd love to feature it!
 
 ### Related projects
 
-- [**bio**](https://github.com/didvc/bio) — Profile writings and translations of Vulpes (didvc)
-- [**astro-html-editor**](https://github.com/didvc/astro-html-editor) — Self-hosted HTML editor with live preview. Astro SSR + plain JavaScript, server-side file persistence.
-- [**awesome-template**](https://github.com/didvc/awesome-template)
-- [**react-image-editor**](https://github.com/didvc/react-image-editor) — A powerful web-based image editor built with React, TypeScript, and Canvas API. Features real-time filters, transformations, crop tool, and…
-- [**image-gallery-app**](https://github.com/didvc/image-gallery-app) — 🖼️ Modern minimalist image gallery built with Express.js and Vue.js - featuring drag & drop upload, responsive design, and clean aesthetics
-- [**vibe-go-image-gallery**](https://github.com/didvc/vibe-go-image-gallery) — 🖼️ Modern image gallery application built with Go and Vue.js featuring SEO optimization, responsive design, and automatic thumbnail generation.
-- [**html-bio-generator**](https://github.com/didvc/html-bio-generator) — A modern, intuitive tool for creating beautiful HTML bio pages with ease. Built with Next.js, TypeScript, and Tailwind CSS. Perfect for…
-- [**app**](https://github.com/AI-marriage/app) — AIを使った結婚証明書ジェネレーター - ChatGPTとの特別な瞬間を美しい証明書で記録しましょう
-- [**text-to-speech**](https://github.com/didvc/text-to-speech) — 🎤 VoiceFlow - Modern text-to-speech web application with real-time word highlighting, customizable voice settings, and content management. Built…
-- [**molecular**](https://github.com/didvc/molecular) — 🧬 Interactive web application for visualizing and animating molecular structures. Built with React, TypeScript, and modern web technologies for…
-- [**hugo-kawaii**](https://github.com/didvc/hugo-kawaii) — A modern and cool Hugo theme with beautiful kawaii aesthetics, dark mode support, and delightful animations
-- [**app**](https://github.com/hiroyuki-generator/app)
-- [**Kuso-Physics**](https://github.com/KusoGames/Kuso-Physics) — Open-source chaos physics game. Built with Next.js. Easily self-host on GitHub Pages.
+- [bio](https://github.com/didvc/bio): Profile writings and translations of Vulpes (didvc)
+- [astro-html-editor](https://github.com/didvc/astro-html-editor): Self-hosted HTML editor with live preview. Astro SSR + plain JavaScript, server-side file persistence.
+- [awesome-template](https://github.com/didvc/awesome-template)
+- [react-image-editor](https://github.com/didvc/react-image-editor): A powerful web-based image editor built with React, TypeScript, and Canvas API. Features real-time filters, transformations, crop tool, and…
+- [image-gallery-app](https://github.com/didvc/image-gallery-app): Modern minimalist image gallery built with Express.js and Vue.js - featuring drag & drop upload, responsive design, and clean aesthetics
+- [vibe-go-image-gallery](https://github.com/didvc/vibe-go-image-gallery): Modern image gallery application built with Go and Vue.js featuring SEO optimization, responsive design, and automatic thumbnail generation.
+- [html-bio-generator](https://github.com/didvc/html-bio-generator): A modern, intuitive tool for creating beautiful HTML bio pages with ease. Built with Next.js, TypeScript, and Tailwind CSS. Perfect for…
+- [app](https://github.com/AI-marriage/app): AIを使った結婚証明書ジェネレーター - ChatGPTとの特別な瞬間を美しい証明書で記録しましょう
+- [text-to-speech](https://github.com/didvc/text-to-speech): VoiceFlow - Modern text-to-speech web application with real-time word highlighting, customizable voice settings, and content management. Built…
+- [molecular](https://github.com/didvc/molecular): Interactive web application for visualizing and animating molecular structures. Built with React, TypeScript, and modern web technologies for…
+- [hugo-kawaii](https://github.com/didvc/hugo-kawaii): A modern and cool Hugo theme with beautiful kawaii aesthetics, dark mode support, and delightful animations
+- [app](https://github.com/hiroyuki-generator/app)
+- [Kuso-Physics](https://github.com/KusoGames/Kuso-Physics): Open-source chaos physics game. Built with Next.js. Easily self-host on GitHub Pages.
 <!-- END gh-mutual-linking -->

@@ -9,15 +9,15 @@ export const en = {
 
   // Profile
   profileTitle: "About Me",
-  name: "Fumiya Takemoto",
+  name: "Aesthetic Vulpes",
   role: "Full Stack Developer",
   location: "Tokyo, Japan",
-  bio: "I'm a passionate developer with a love for anime and cutting-edge technology. I specialize in creating interactive web experiences using React, TypeScript, and Three.js.",
+  bio: "A developer in Tokyo working on the web, provenance and cryptography, with a soft spot for illustration and the arts.",
   experience: "Experience",
-  experienceYears: "5+ years",
+  experienceYears: "Since 2016",
   skills: "Skills",
   contact: "Contact",
-  email: "hello@fumiya.dev",
+  email: "",
 
   // Skills
   frontend: "Frontend",
@@ -42,11 +42,11 @@ export const en = {
   inspiredBy: "Inspired by",
 
   // Footer
-  copyright: "© 2025 .fumiya.tsx • Built with Next.js and TypeScript • Inspired by",
+  copyright: "© 2026 Aesthetic Vulpes (didvc) • Built with Next.js and TypeScript • Theme:",
 
   // Theme names
-  lain: "Serial Experiments Lain",
-  luckystar: "Lucky Star",
+  weltschmerz: "Weltschmerz",
+  crystalline: "Crystalline",
 
   // Language
   switchToJapanese: "日本語",

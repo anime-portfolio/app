@@ -34,7 +34,7 @@
 - [ ] I have tested these changes locally
 - [ ] I have tested on multiple browsers (Chrome, Firefox, Safari)
 - [ ] I have tested on mobile devices
-- [ ] I have tested both Lain and Lucky Star themes
+- [ ] I have tested both the Crystalline and Weltschmerz themes
 - [ ] All existing tests pass
 - [ ] I have added tests for new functionality (if applicable)
 

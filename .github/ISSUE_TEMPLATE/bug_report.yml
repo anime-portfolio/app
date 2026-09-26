@@ -159,8 +159,8 @@ body:
       label: 🎨 Theme in Use
       description: Which theme were you using when the bug occurred?
       options:
-        - Lain (Cyberpunk)
-        - Lucky Star (Kawaii)
+        - Weltschmerz (dark)
+        - Crystalline (light)
         - Custom theme
         - All themes affected
         - Not theme-specific

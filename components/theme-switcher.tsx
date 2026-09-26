@@ -18,17 +18,17 @@ export default function ThemeSwitcher() {
         isDark ? "bg-gray-800 hover:bg-gray-700" : "bg-blue-100 hover:bg-blue-200",
         "flex-1 md:flex-none p-3 md:p-2",
       )}
-      aria-label={`Switch to ${isDark ? "Lucky Star" : "Lain"} theme`}
+      aria-label={`Switch to ${isDark ? "Crystalline" : "Weltschmerz"} theme`}
     >
       {isDark ? (
         <>
           <Sun size={16} className="text-yellow-400" />
-          <span className="text-xs text-white">{t.luckystar}</span>
+          <span className="text-xs text-white">{t.crystalline}</span>
         </>
       ) : (
         <>
           <Moon size={16} className="text-purple-600" />
-          <span className="text-xs text-blue-600">{t.lain}</span>
+          <span className="text-xs text-blue-600">{t.weltschmerz}</span>
         </>
       )}
     </button>

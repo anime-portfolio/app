@@ -22,7 +22,7 @@ body:
           required: true
         - label: I have read the [Contributing Guidelines](../../CONTRIBUTING.md)
           required: true
-        - label: I have checked the [demo site](https://fumiya-tsx.github.io/) to see current features
+        - label: I have checked the [demo site](https://anime-portfolio.github.io/app/) to see current features
           required: true
 
   - type: dropdown

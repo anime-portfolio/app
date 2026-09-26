@@ -13,13 +13,13 @@ export const articles: Article[] = [
     title: "Help & FAQ",
     description: "Frequently asked questions and help for using the Anime Dev Portfolio",
     lastUpdated: "2025-05-01",
-    author: "Anime Dev Team",
+    author: "Aesthetic Vulpes",
     content: `
 # Help & Frequently Asked Questions
 
-## What is .fumiya.tsx?
+## What is this portfolio?
 
-.fumiya.tsx is an open-source developer portfolio template with anime aesthetics. It features interactive elements, theme switching, and a unique presentation of your projects.
+This is an open-source developer portfolio template with two original watercolor characters, Crystalline-chan and Weltschmerz-chan. It features interactive elements, theme switching, and a unique presentation of your projects.
 
 ## How do I customize this portfolio?
 
@@ -31,7 +31,7 @@ To add a new project, edit the \`works\` array in \`data/portfolio-data.tsx\` an
 
 ## How do I change themes?
 
-The portfolio comes with two themes: Lain (cyberpunk) and Lucky Star (kawaii). You can switch between them using the theme toggle button in the header.
+The portfolio comes with two themes: Crystalline (light) and Weltschmerz (dark). You can switch between them using the theme toggle button in the header.
 
 ## Can I add more themes?
 
@@ -39,7 +39,7 @@ Yes! You can create additional themes by adding new theme configurations in \`da
 
 ## How do I deploy this portfolio?
 
-You can deploy this portfolio to Vercel, Netlify, or any other static site hosting service. Simply connect your GitHub repository to your hosting provider of choice.
+You can deploy this portfolio to GitHub Pages, Vercel, Netlify, or any other static site hosting service. Simply connect your GitHub repository to your hosting provider of choice.
 
 ## I found a bug, where can I report it?
 
@@ -55,13 +55,13 @@ Contributions are welcome! Check out the [GitHub repository](https://github.com/
     title: "Privacy Policy",
     description: "Privacy policy for the Anime Dev Portfolio",
     lastUpdated: "2025-05-01",
-    author: "Anime Dev Team",
+    author: "Aesthetic Vulpes",
     content: `
 # Privacy Policy
 
 ## Introduction
 
-This Privacy Policy explains how .fumiya.tsx ("we", "our", or "us") collects, uses, and shares information about you when you use our website.
+This Privacy Policy explains how this portfolio ("we", "our", or "us") collects, uses, and shares information about you when you use our website.
 
 ## Information We Collect
 
@@ -102,7 +102,7 @@ If you have any questions about this Privacy Policy, please contact us at privac
     title: "Self-Hosting Guide",
     description: "Guide for self-hosting the Anime Dev Portfolio",
     lastUpdated: "2025-05-01",
-    author: "Anime Dev Team",
+    author: "Aesthetic Vulpes",
     content: `
 # Self-Hosting Guide
 

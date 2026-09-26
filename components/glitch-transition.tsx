@@ -52,15 +52,15 @@ export default function GlitchTransition() {
                 className={cn("absolute top-0 left-0 w-full h-full", isDark ? "text-pink-300" : "text-purple-300")}
                 style={{ clipPath: "polygon(0 0, 100% 0, 100% 45%, 0 45%)", transform: "translate(-5px, -5px)" }}
               >
-                .fumiya.tsx
+                didvc
               </span>
               <span
                 className={cn("absolute top-0 left-0 w-full h-full", isDark ? "text-cyan-300" : "text-pink-300")}
                 style={{ clipPath: "polygon(0 45%, 100% 45%, 100% 100%, 0 100%)", transform: "translate(5px, 5px)" }}
               >
-                .fumiya.tsx
+                didvc
               </span>
-              <span>.fumiya.tsx</span>
+              <span>didvc</span>
             </span>
           </motion.div>
         </motion.div>

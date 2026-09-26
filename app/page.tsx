@@ -78,9 +78,9 @@ function PortfolioContent() {
         )}
       >
         <div>
-          <GlitchText className={cn("text-xl md:text-2xl font-bold", currentTheme.accentColor)}>.fumiya.tsx</GlitchText>
+          <GlitchText className={cn("text-xl md:text-2xl font-bold", currentTheme.accentColor)}>didvc</GlitchText>
           <p className={cn("text-xs md:text-sm", currentTheme.secondaryColor)}>
-            {currentTheme.styles.includes("dark") ? "Present day, present time..." : "Coding with anime spirit!"}
+            {currentTheme.styles.includes("dark") ? "Some days feel like static..." : "Coding in watercolor."}
           </p>
         </div>
 
@@ -363,7 +363,7 @@ function PortfolioContent() {
         )}
       >
         <p>
-          {t.copyright} {currentTheme.styles.includes("dark") ? t.lain : t.luckystar} •{" "}
+          {t.copyright} {currentTheme.styles.includes("dark") ? t.weltschmerz : t.crystalline} •{" "}
           <Link href="/wiki" className="hover:underline">
             {t.wiki}
           </Link>{" "}

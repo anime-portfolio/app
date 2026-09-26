@@ -40,42 +40,48 @@ export default function ProfileSection() {
           </div>
           <p className={cn("text-sm mb-6", isDark ? "text-gray-300" : "text-gray-600")}>{bio}</p>
           <div className="flex gap-3">
-            <a
-              href={social.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn(
-                "p-2 rounded-full transition-colors",
-                isDark ? "bg-gray-800 text-white hover:bg-gray-700" : "bg-gray-100 text-gray-700 hover:bg-gray-200",
-              )}
-              aria-label="GitHub"
-            >
-              <Github size={18} />
-            </a>
-            <a
-              href={social.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn(
-                "p-2 rounded-full transition-colors",
-                isDark ? "bg-gray-800 text-white hover:bg-gray-700" : "bg-gray-100 text-gray-700 hover:bg-gray-200",
-              )}
-              aria-label="Twitter"
-            >
-              <Twitter size={18} />
-            </a>
-            <a
-              href={social.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={cn(
-                "p-2 rounded-full transition-colors",
-                isDark ? "bg-gray-800 text-white hover:bg-gray-700" : "bg-gray-100 text-gray-700 hover:bg-gray-200",
-              )}
-              aria-label="LinkedIn"
-            >
-              <Linkedin size={18} />
-            </a>
+            {social.github && (
+              <a
+                href={social.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(
+                  "p-2 rounded-full transition-colors",
+                  isDark ? "bg-gray-800 text-white hover:bg-gray-700" : "bg-gray-100 text-gray-700 hover:bg-gray-200",
+                )}
+                aria-label="GitHub"
+              >
+                <Github size={18} />
+              </a>
+            )}
+            {social.twitter && (
+              <a
+                href={social.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(
+                  "p-2 rounded-full transition-colors",
+                  isDark ? "bg-gray-800 text-white hover:bg-gray-700" : "bg-gray-100 text-gray-700 hover:bg-gray-200",
+                )}
+                aria-label="Twitter"
+              >
+                <Twitter size={18} />
+              </a>
+            )}
+            {social.linkedin && (
+              <a
+                href={social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={cn(
+                  "p-2 rounded-full transition-colors",
+                  isDark ? "bg-gray-800 text-white hover:bg-gray-700" : "bg-gray-100 text-gray-700 hover:bg-gray-200",
+                )}
+                aria-label="LinkedIn"
+              >
+                <Linkedin size={18} />
+              </a>
+            )}
           </div>
         </div>
 
@@ -94,23 +100,25 @@ export default function ProfileSection() {
             </div>
 
             {/* Contact */}
-            <div>
-              <h3
-                className={cn("text-lg font-semibold mb-3 flex items-center", isDark ? "text-white" : "text-gray-900")}
-              >
-                <Mail size={18} className="mr-2" />
-                {t.contact}
-              </h3>
-              <a
-                href={`mailto:${profileData.email}`}
-                className={cn(
-                  "text-sm",
-                  isDark ? "text-pink-400 hover:text-pink-300" : "text-blue-600 hover:text-blue-700",
-                )}
-              >
-                {profileData.email}
-              </a>
-            </div>
+            {profileData.email && (
+              <div>
+                <h3
+                  className={cn("text-lg font-semibold mb-3 flex items-center", isDark ? "text-white" : "text-gray-900")}
+                >
+                  <Mail size={18} className="mr-2" />
+                  {t.contact}
+                </h3>
+                <a
+                  href={`mailto:${profileData.email}`}
+                  className={cn(
+                    "text-sm",
+                    isDark ? "text-pink-400 hover:text-pink-300" : "text-blue-600 hover:text-blue-700",
+                  )}
+                >
+                  {profileData.email}
+                </a>
+              </div>
+            )}
           </div>
 
           {/* Skills */}

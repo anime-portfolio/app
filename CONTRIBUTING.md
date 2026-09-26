@@ -85,7 +85,7 @@ git checkout -b fix/bug-description
 
 #### 🎨 **Theme Contributions**
 - New anime-inspired themes
-- Improvements to existing Lain or Lucky Star themes
+- Improvements to the existing Crystalline or Weltschmerz themes
 - Creative visual effects and animations
 - Character interactions and easter eggs
 
@@ -138,7 +138,7 @@ Before submitting your contribution:
 #### **Manual Testing**
 - [ ] Test on Chrome, Firefox, Safari, and Edge
 - [ ] Test on mobile devices (iOS and Android)
-- [ ] Test both Lain and Lucky Star themes
+- [ ] Test both the Crystalline and Weltschmerz themes
 - [ ] Verify responsive design at different screen sizes
 - [ ] Check accessibility with screen readers
 - [ ] Test with slow internet connections
@@ -166,7 +166,7 @@ npm run build
 ### 2. **Commit Your Changes**
 ```bash
 # Use conventional commit format
-git commit -m "feat: add new Evangelion theme with angel animations"
+git commit -m "feat: add a new theme with its own floating character"
 git commit -m "fix: resolve theme switching bug on mobile devices"
 git commit -m "docs: add customization guide for new themes"
 ```

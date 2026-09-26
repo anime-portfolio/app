@@ -5,7 +5,7 @@ import { createContext, useContext, useState, useEffect } from "react"
 import type { PortfolioPageProperties } from "@/types"
 
 // Define our themes
-export const lainTheme: PortfolioPageProperties = {
+export const weltschmerzTheme: PortfolioPageProperties = {
   type: "fullscreen",
   styles: ["anime", "dark", "hacker", "neon"],
   features: [
@@ -18,22 +18,21 @@ export const lainTheme: PortfolioPageProperties = {
     "konami-code",
   ],
   floatingGirl: {
-    id: "lain",
-    name: "Lain",
-    description: "Your digital companion who knows too much about the Wired",
-    image: "https://yuis.xsrv.jp/images/ss/lain_bgr_drawing.png",
+    id: "weltschmerz",
+    name: "Weltschmerz-chan",
+    description: "A quiet girl who feels the weight of the world",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/weltschmerz.png`,
     floatingStyle: "glitchy",
     mood: "mysterious",
     phrases: [
-      "Present day... Present time!",
-      "Everything is connected in the Wired.",
-      "Who are you really?",
-      "Let me show you something interesting...",
+      "Some days the world feels heavy.",
+      "Ink dries, but the stain stays.",
+      "Stay a little longer, if you like.",
+      "Let me show you something quiet...",
     ],
     interactionTriggers: ["hover", "click", "konami-code"],
     themeAffinity: ["hacker", "dark"],
   },
-  backgroundMusic: "/audio/cyberia-mix.mp3",
   enableTerminalCommands: true,
   cursorStyle: "glitch",
   gradientBg: "bg-gradient-to-br from-gray-900 via-purple-900 to-black",
@@ -49,7 +48,7 @@ export const lainTheme: PortfolioPageProperties = {
   footerBg: "bg-black/70",
 }
 
-export const luckyStarTheme: PortfolioPageProperties = {
+export const crystallineTheme: PortfolioPageProperties = {
   type: "fullscreen",
   styles: ["anime", "moe", "pink", "minimal"],
   features: [
@@ -62,22 +61,21 @@ export const luckyStarTheme: PortfolioPageProperties = {
     "konami-code",
   ],
   floatingGirl: {
-    id: "konata",
-    name: "Konata",
-    description: "Your otaku companion who knows too much about anime and games",
-    image: "https://yuis.xsrv.jp/images/ss/konata_bgr_drawing.png",
+    id: "crystalline",
+    name: "Crystalline-chan",
+    description: "A watercolor girl who walks with a deer made of glass",
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/crystalline.png`,
     floatingStyle: "hover",
     mood: "cheerful",
     phrases: [
-      "I'm not lazy, I'm just conserving energy!",
-      "Games and anime are my life!",
-      "Did you know I'm an expert at RPGs?",
-      "Let me show you my collection...",
+      "Everything looks clearer through glass.",
+      "Did you see the deer? It's made of light.",
+      "Colors bleed, and that's the best part.",
+      "Let me show you something that sparkles...",
     ],
     interactionTriggers: ["hover", "click", "konami-code"],
     themeAffinity: ["moe", "pink"],
   },
-  backgroundMusic: "/audio/lucky-star-theme.mp3",
   enableTerminalCommands: true,
   cursorStyle: "default",
   gradientBg: "bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100",
@@ -95,22 +93,22 @@ export const luckyStarTheme: PortfolioPageProperties = {
 
 type ThemeContextType = {
   currentTheme: PortfolioPageProperties
-  themeName: "lain" | "luckystar"
+  themeName: "weltschmerz" | "crystalline"
   toggleTheme: () => void
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined)
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [themeName, setThemeName] = useState<"lain" | "luckystar">("luckystar")
-  const [currentTheme, setCurrentTheme] = useState<PortfolioPageProperties>(luckyStarTheme)
+  const [themeName, setThemeName] = useState<"weltschmerz" | "crystalline">("crystalline")
+  const [currentTheme, setCurrentTheme] = useState<PortfolioPageProperties>(crystallineTheme)
 
   useEffect(() => {
-    setCurrentTheme(themeName === "lain" ? lainTheme : luckyStarTheme)
+    setCurrentTheme(themeName === "weltschmerz" ? weltschmerzTheme : crystallineTheme)
   }, [themeName])
 
   const toggleTheme = () => {
-    setThemeName(themeName === "lain" ? "luckystar" : "lain")
+    setThemeName(themeName === "weltschmerz" ? "crystalline" : "weltschmerz")
   }
 
   return <ThemeContext.Provider value={{ currentTheme, themeName, toggleTheme }}>{children}</ThemeContext.Provider>
