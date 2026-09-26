@@ -67,7 +67,6 @@ function PortfolioContent() {
         currentTheme.textColor,
         currentTheme.styles.includes("crt") &&
           "after:content-[''] after:pointer-events-none after:fixed after:inset-0 after:bg-[url('/images/crt-overlay.png')] after:bg-cover after:opacity-20 after:z-50",
-        currentTheme.cursorStyle === "glitch" && "cursor-[url('/images/glitch-cursor.png'),auto]",
       )}
     >
       {/* Header */}
